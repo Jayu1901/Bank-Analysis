@@ -1,0 +1,63 @@
+Date Table = 
+VAR StartDate = MIN('Bank data'[Date Joined])
+VAR EndDate = MAX('Bank data'[Date Joined])
+VAR DateTable = 
+ADDCOLUMNS(
+    CALENDAR(StartDate, EndDate),
+    "Year", YEAR([Date]),
+    "Quarter Name", FORMAT([Date], "\QQ"),
+    "Quarter number", QUARTER([Date]),
+    "Month Name", FORMAT([Date], "MMM"),
+    "Month number", MONTH([Date]),
+    "Month Year", FORMAT([Date], "MMM YYYY"),
+    "Month Year Sort", VALUE(FORMAT([Date], "YYYYMM")),
+    "Week Name", "W" & WEEKNUM([Date]),
+    "Day Name", FORMAT([Date], "DDDD"),
+    "Day number", WEEKDAY([Date])
+)
+RETURN
+DateTable
+
+
+
+Dax Calculations:
+Total Balance = SUM('Bank data'[Balance])
+Male Balance = CALCULATE([Total Balance], 'Bank data'[Gender]= "Male")
+Female Balance = CALCULATE([Total Balance], 'Bank data'[Gender]= "Female")
+House Owners Balance = CALCULATE([Total Balance], 'Bank data'[houseloan] = "yes")
+Renters Balance = CALCULATE([Total Balance], 'Bank data'[houseloan] = "no")
+
+
+
+Total Customers = COUNTROWS( 'Bank data')
+Avg Age = AVERAGE( 'Bank data'[Age])
+Avg Balance = AVERAGE( 'Bank data'[Balance])
+
+
+
+Time intelligence cal:
+costomer MoM = 
+VAR PM= CALCULATE([Total Customers],DATEADD('Date Table'[Date],-1,MONTH))
+VAR CM=[Total Customers]
+RETURN
+IF(AND(CM,PM),CM/PM-1)
+
+
+
+Balance MoM = 
+VAR PM= CALCULATE([Total Balance],DATEADD('Date Table'[Date],-1,MONTH))
+VAR CM=[Total Balance]
+RETURN
+IF(AND(CM,PM),CM/PM-1)
+
+
+
+Measure Selected = SELECTEDVALUE('Selection Table'[Measure],"Balance")
+
+
+Measure Logic = SWITCH(TRUE(),
+'Measure'[Measure Selected] = "Balance" , [Total Balance], 
+'Measure'[Measure Selected] = "Avg Balance", [Avg Balance], 
+'Measure'[Measure Selected] = "No of Customers", [Total Customers], 
+'Measure'[Measure Selected] = "Avg Age", [Avg Age], 
+[Total Balance])

@@ -50,6 +50,42 @@ Here’s a more professional and engaging version of your description, enhanced 
 * Examine behavioral differences between genders
 * Suggest initiatives to boost acquisition and retention among female customers
 
+## Provided Main Dashboard
+<p align="center">
+    <img src="https://github.com/Jayu1901/Bank-Analysis/blob/Jayu1901-patch-1/Main%20Page.png" width="600">
+</p>
+
+
+## Menu Page
+
+<p align="center">
+    <img src='https://github.com/Jayu1901/Bank-Analysis/blob/Jayu1901-patch-1/Menu%20Page.png' height="400">
+</p>
+
+
+## KPI Analysis Dashboard
+
+<p align="center">
+    <img src='https://github.com/Jayu1901/Bank-Analysis/blob/Jayu1901-patch-1/KPI%20Analysis.png' width="600">
+</p>
+
+## Customer Analysis I Dashboard
+
+<p align="center">
+    <img src='https://github.com/Jayu1901/Bank-Analysis/blob/Jayu1901-patch-1/Customer%20Analysis%20I.png' width="600">
+</p>
+
+## Customer Analysis II Dashboard
+
+<p align="center">
+    <img src='https://github.com/Jayu1901/Bank-Analysis/blob/Jayu1901-patch-1/Customer%20Analysis%20II.png' width="600">
+</p>
+
+## Trend Analysis Dashboard
+
+<p align="center">
+    <img src='https://github.com/Jayu1901/Bank-Analysis/blob/Jayu1901-patch-1/Trend%20Analysis.png' width="600">
+</p>
 ---
 
 💬 Have questions or feedback? Let’s connect! 💼✨

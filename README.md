@@ -49,6 +49,10 @@
 * Examine behavioral differences between genders
 * Suggest initiatives to boost acquisition and retention among female customers
 
+---
+## 📊 [Live Dashboard](https://app.powerbi.com/groups/me/reports/a0ffbf3c-53ca-499b-98b6-0f2557df1d64/784923be00e38ec166be?experience=power-bi)
+---
+
 ## Provided Main Dashboard
 <p align="center">
     <img src="https://github.com/Jayu1901/Bank-Analysis/blob/Jayu1901-patch-1/Main%20Page.png" width="600">

@@ -50,7 +50,7 @@
 * Suggest initiatives to boost acquisition and retention among female customers
 
 ---
-## 📊 [Live Dashboard](https://app.powerbi.com/links/fhe-J1wp3n?ctid=c6e549b3-5f45-4032-aae9-d4244dc5b2c4&pbi_source=linkShare)
+## 📊 [Live Dashboard](https://app.powerbi.com/view?r=eyJrIjoiNjljYTNmMjQtMmE3Yy00OTM5LWJhMGEtYWY4ZjNmOTkwNmJhIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9)
 ---
 
 ## Provided Main Dashboard
